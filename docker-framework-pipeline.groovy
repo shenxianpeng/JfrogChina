@@ -3,17 +3,17 @@ node {
 // Parameters
 
   // docker
-  def DOCKER_URL = 'jfrogchina.local:8081'
+  def DOCKER_URL = '47.93.199.122:8081'
 
   // sonarqube
-  def SONAR_HOST_URL = 'http://jfrogchina.local:9000'
+  def SONAR_HOST_URL = 'http://47.93.199.122:9000'
   def SONAR_SERVER = 'sonar'
   def SONAR_SCANNER_TOOL = 'sonarscanner'
   def SONAR_PROJECT_KEY = "${JOB_NAME}"
   def SONAR_SOURCES = 'maven-example/multi3/src'
  
   // artifactory
-  def ART_URL = 'http://jfrogchina.local:8081/artifactory/'
+  def ART_URL = 'http://47.93.199.122:8081/artifactory/'
   def CREDENTIALSID = 'arti'
   def PASSWORDVARIABLE = 'PASSWORD'
   def USERNAMEVARIABLE = 'USERNAME'
